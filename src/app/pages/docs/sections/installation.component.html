@@ -1,0 +1,59 @@
+<h1 class="text-2xl font-bold text-foreground">Instalação</h1>
+<p class="mt-2 text-sm text-muted-foreground">
+  Como instalar e configurar o Wap no seu projeto .NET.
+</p>
+
+<div class="mt-8 space-y-6">
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Pré-requisitos</h2>
+    <ul class="mt-4 space-y-2">
+      <li class="flex items-center gap-3">
+        <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-muted text-xs font-medium text-muted-foreground">1</span>
+        <span class="text-sm text-muted-foreground">.NET 8 ou superior instalado</span>
+      </li>
+      <li class="flex items-center gap-3">
+        <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-muted text-xs font-medium text-muted-foreground">2</span>
+        <span class="text-sm text-muted-foreground">NuGet packages são instalados automaticamente</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <div class="flex items-center gap-3">
+      <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">1</span>
+      <h2 class="text-lg font-semibold text-foreground">Instalar o pacote</h2>
+    </div>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Adicione o pacote Wap ao seu projeto via NuGet.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="step1Code" language="bash" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <div class="flex items-center gap-3">
+      <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">2</span>
+      <h2 class="text-lg font-semibold text-foreground">Importar os namespaces</h2>
+    </div>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Importe os namespaces necessários no seu arquivo C#.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="step2Code" language="csharp" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <div class="flex items-center gap-3">
+      <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">3</span>
+      <h2 class="text-lg font-semibold text-foreground">Criar e conectar o client</h2>
+    </div>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Crie uma instância do WapClient e conecte ao WhatsApp Web.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="step3Code" language="csharp" />
+    </div>
+  </div>
+</div>

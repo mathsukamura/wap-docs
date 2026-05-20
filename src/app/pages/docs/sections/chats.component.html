@@ -1,0 +1,48 @@
+<div>
+  <h1 class="text-2xl font-bold text-foreground">Chats</h1>
+  <p class="mt-2 text-sm text-muted-foreground">
+    Operações de chat: presença, ações e perfil.
+  </p>
+
+  <div class="mt-8 space-y-6">
+    <div class="rounded-lg border border-border bg-card p-6">
+      <h2 class="text-lg font-semibold text-foreground">Presença e Digitando</h2>
+      <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+        Envie indicadores de presença, digitando e gravando áudio.
+      </p>
+      <div class="mt-4">
+        <app-code-block [code]="presenceCode" language="csharp" />
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-border bg-card p-6">
+      <h2 class="text-lg font-semibold text-foreground">Ações de Chat</h2>
+      <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+        Arquivar, fixar, silenciar, deletar ou limpar chats.
+      </p>
+      <div class="mt-4">
+        <app-code-block [code]="actionsCode" language="csharp" />
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-border bg-card p-6">
+      <h2 class="text-lg font-semibold text-foreground">Perfil</h2>
+      <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+        Atualize seu status e nome de perfil, ou consulte o status de outros usuários.
+      </p>
+      <div class="mt-4">
+        <app-code-block [code]="profileCode" language="csharp" />
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-border bg-card p-6">
+      <h2 class="text-lg font-semibold text-foreground">Lista de Bloqueio</h2>
+      <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+        Bloqueie, desbloqueie usuários e consulte a lista de bloqueados.
+      </p>
+      <div class="mt-4">
+        <app-code-block [code]="blockCode" language="csharp" />
+      </div>
+    </div>
+  </div>
+</div>

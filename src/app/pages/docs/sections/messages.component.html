@@ -1,0 +1,66 @@
+<h1 class="text-2xl font-bold text-foreground">Mensagens</h1>
+<p class="mt-2 text-sm text-muted-foreground">
+  Envie e receba todos os tipos de mensagem pelo WhatsApp.
+</p>
+
+<div class="mt-8 space-y-6">
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Enviar Texto</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Envie uma mensagem de texto simples para um contato ou grupo.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="textCode" language="csharp" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Reações</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Envie reações (emojis) para mensagens existentes.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="reactionCode" language="csharp" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Localização</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Envie uma localização com coordenadas e nome do local.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="locationCode" language="csharp" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Contato</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Envie um cartão de contato no formato vCard.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="contactCode" language="csharp" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Receber Mensagens</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Escute o evento OnMessage para receber todas as mensagens em tempo real.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="receiveCode" language="csharp" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Confirmação de Leitura</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Envie confirmação de leitura (check azul) para mensagens recebidas.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="readCode" language="csharp" />
+    </div>
+  </div>
+</div>

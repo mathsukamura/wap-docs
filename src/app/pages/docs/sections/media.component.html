@@ -1,0 +1,66 @@
+<h1 class="text-2xl font-bold text-foreground">Mídia</h1>
+<p class="mt-2 text-sm text-muted-foreground">
+  Upload e download de imagens, vídeos, áudios, documentos e stickers.
+</p>
+
+<div class="mt-8 space-y-6">
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Enviar Imagem</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Envie imagens com legenda opcional. Os bytes são criptografados automaticamente.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="imageCode" language="csharp" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Enviar Vídeo</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Envie vídeos com legenda opcional.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="videoCode" language="csharp" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Enviar Áudio</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Envie áudios no formato OGG. Use ptt: true para enviar como mensagem de voz.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="audioCode" language="csharp" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Enviar Documento</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Envie arquivos de qualquer tipo como documento com nome do arquivo.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="docCode" language="csharp" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Enviar Sticker</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Envie stickers no formato WebP.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="stickerCode" language="csharp" />
+    </div>
+  </div>
+
+  <div class="rounded-lg border border-border bg-card p-6">
+    <h2 class="text-lg font-semibold text-foreground">Download de Mídia</h2>
+    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+      Baixe mídias recebidas descriptografando automaticamente os bytes.
+    </p>
+    <div class="mt-4">
+      <app-code-block [code]="downloadCode" language="csharp" />
+    </div>
+  </div>
+</div>

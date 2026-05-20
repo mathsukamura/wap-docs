@@ -1,0 +1,58 @@
+<div>
+  <h1 class="text-2xl font-bold text-foreground">Grupos</h1>
+  <p class="mt-2 text-sm text-muted-foreground">
+    Gerenciamento completo de grupos do WhatsApp.
+  </p>
+
+  <div class="mt-8 space-y-6">
+    <div class="rounded-lg border border-border bg-card p-6">
+      <h2 class="text-lg font-semibold text-foreground">Criar Grupo</h2>
+      <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+        Crie um novo grupo com participantes iniciais.
+      </p>
+      <div class="mt-4">
+        <app-code-block [code]="createCode" language="csharp" />
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-border bg-card p-6">
+      <h2 class="text-lg font-semibold text-foreground">Metadata do Grupo</h2>
+      <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+        Obtenha informações detalhadas de um grupo.
+      </p>
+      <div class="mt-4">
+        <app-code-block [code]="metadataCode" language="csharp" />
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-border bg-card p-6">
+      <h2 class="text-lg font-semibold text-foreground">Gerenciar Participantes</h2>
+      <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+        Adicione, remova, promova ou rebaixe participantes.
+      </p>
+      <div class="mt-4">
+        <app-code-block [code]="participantsCode" language="csharp" />
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-border bg-card p-6">
+      <h2 class="text-lg font-semibold text-foreground">Configurações</h2>
+      <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+        Altere nome, descrição e configurações do grupo.
+      </p>
+      <div class="mt-4">
+        <app-code-block [code]="settingsCode" language="csharp" />
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-border bg-card p-6">
+      <h2 class="text-lg font-semibold text-foreground">Convites</h2>
+      <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+        Gerencie códigos de convite do grupo.
+      </p>
+      <div class="mt-4">
+        <app-code-block [code]="inviteCode" language="csharp" />
+      </div>
+    </div>
+  </div>
+</div>
