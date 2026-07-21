@@ -7,11 +7,13 @@
   <div class="rounded-lg border border-border bg-card p-6">
     <h2 class="text-lg font-semibold text-foreground">O que é o Wap?</h2>
     <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
-      Wap é uma biblioteca C# completa para interagir com a API do WhatsApp Web.
-      Ela implementa o protocolo Signal para criptografia de ponta a ponta,
-      handshake Noise_XX, autenticação via QR Code e Pairing Code, envio e
-      recebimento de todos os tipos de mensagem, upload e download de mídia com
-      criptografia, gerenciamento de grupos, comunidades, newsletters e muito mais.
+      Wap é uma biblioteca C# completa para interagir com a API do WhatsApp Web,
+      criada por <a href="https://github.com/mathsukamura" target="_blank" rel="noopener" class="text-primary underline hover:text-primary/80">mathsukamura</a>.
+      Ela implementa o protocolo Signal para criptografia de ponta a ponta com
+      multi-device fanout, handshake Noise_XX com protobuf, autenticação automática
+      via QR Code e Pairing Code, envio e recebimento de todos os tipos de mensagem,
+      upload e download de mídia com criptografia, gerenciamento de grupos com
+      Sender Key distribution, comunidades, newsletters e muito mais.
     </p>
   </div>
 
@@ -22,19 +24,19 @@
         <svg class="mt-0.5 h-5 w-5 shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
         </svg>
-        <span class="text-sm text-muted-foreground">Signal Protocol E2E</span>
+        <span class="text-sm text-muted-foreground">Signal Protocol E2E com multi-device fanout</span>
       </li>
       <li class="flex items-start gap-3">
         <svg class="mt-0.5 h-5 w-5 shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
         </svg>
-        <span class="text-sm text-muted-foreground">Noise_XX handshake</span>
+        <span class="text-sm text-muted-foreground">Noise_XX handshake com protobuf ClientPayload</span>
       </li>
       <li class="flex items-start gap-3">
         <svg class="mt-0.5 h-5 w-5 shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
         </svg>
-        <span class="text-sm text-muted-foreground">QR Code / Pairing Code auth</span>
+        <span class="text-sm text-muted-foreground">QR Code automático / Pairing Code auth</span>
       </li>
       <li class="flex items-start gap-3">
         <svg class="mt-0.5 h-5 w-5 shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -52,7 +54,7 @@
         <svg class="mt-0.5 h-5 w-5 shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
         </svg>
-        <span class="text-sm text-muted-foreground">Groups / communities / newsletters</span>
+        <span class="text-sm text-muted-foreground">Groups com Sender Key distribution / communities / newsletters</span>
       </li>
       <li class="flex items-start gap-3">
         <svg class="mt-0.5 h-5 w-5 shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">

@@ -7,8 +7,9 @@
   <div class="rounded-lg border border-border bg-card p-6">
     <h2 class="text-lg font-semibold text-foreground">Conexão Básica</h2>
     <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
-      Crie o client informando a pasta de autenticação e conecte. O QR Code será
-      exibido automaticamente no primeiro acesso.
+      Crie o client informando a pasta de autenticação e conecte. Na v2.0.0, o QR Code
+      é buscado automaticamente do servidor e exibido no terminal no primeiro acesso.
+      As credenciais são salvas automaticamente após login e upload de pre-keys.
     </p>
     <div class="mt-4">
       <app-code-block [code]="basicCode" language="csharp" />
